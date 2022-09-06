@@ -1,0 +1,29 @@
+.navigation {
+    position: absolute;
+    background-color: #ffffff;
+    width: 320px;
+    &__list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        @media (max-width: 767px) {
+            display: none;
+        }
+    }
+    &__item {
+        border-top: 1px solid rgba(230, 230, 230, 1);
+        border-bottom: 1px solid rgba(230, 230, 230, 1);
+        text-align: center;
+    }
+    &__link {
+        display: block;
+        font-size: 20px;
+        line-height: 20px;
+        font-weight: 500;
+        color: #000000;
+        text-decoration: none;
+        padding-top: 22px;
+        padding-bottom: 24px;
+    }
+}
+

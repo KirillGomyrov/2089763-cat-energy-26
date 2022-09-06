@@ -1,0 +1,57 @@
+.function-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    &__item {
+        position: relative;
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        line-height: 18px;
+        color: rgba(68, 68, 68, 1);
+        padding: 2px 0;
+        padding-left: 80.5px;
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+        &--first::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            width: 60px;
+            height: 60px;
+            background: url(../../img/leaf-icon.png) no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        &--second::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            width: 60px;
+            height: 60px;
+            background: url(../../img/water-icon.png) no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        &--third::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            width: 60px;
+            height: 60px;
+            background: url(../../img/cutlery.icon.png) no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        &--fourth::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            width: 60px;
+            height: 60px;
+            background: url(../../img/clock-icon.png) no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+    }
+}
